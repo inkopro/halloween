@@ -1,0 +1,546 @@
+*
+  box-sizing: border-box
+
+body
+  padding: 0
+  margin: 0
+  font-family: 'Oswald', sans-serif;
+
+h1, h2, h3, h4, h5, h6, p
+  margin: 0
+
+.section-title
+  font-weight: 500
+  font-size: 36px
+  line-height: 53px
+  text-align: center
+  text-transform: uppercase
+  margin-bottom: 60px
+
+.container
+  width: 1100px
+  margin: 0 auto
+  max-width: 90%
+
+// Header
+.header
+  background-image: url(../img/header/header-bg.png)
+  background-repeat: no-repeat
+  background-size: cover
+  color: #fff
+  padding-top: 190px
+  padding-bottom: 379px
+  &-content
+    text-align: center
+    text-transform: uppercase
+    &__title
+      max-width: 1000px
+      font-size: 64px
+      line-height: 95px
+      letter-spacing: 0.02em
+      margin: 0 auto
+      margin-bottom: 37px
+    &__subtitle
+      font-size: 18px
+      line-height: 27px
+      
+// Stats
+.stats
+  &-blocks
+    margin-top: -200px
+    background-color: #F7F7F7
+    max-width: 1100px
+    display: flex
+    justify-content: space-around
+    padding: 57px 130px
+    text-align: center
+  &-block
+    &__title
+      color: #F7654A
+      font-size: 72px
+      line-height: 107px
+      margin-bottom: 25px
+    &__subtitle
+      font-weight: 500
+      font-size: 36px
+      line-height: 53px
+      text-transform: uppercase
+      margin-bottom: 10px
+    &__description
+      font-weight: 500
+      font-size: 18px
+      line-height: 27px
+      color: #999
+
+// Party
+.party
+  padding-top: 100px
+  padding-bottom: 100px
+  color: #404149
+  &-blocks
+    display: flex
+    justify-content: center
+  &-block
+    margin-right: 30px
+    &__img
+      margin-bottom: 45px
+    &__title
+      font-size: 24px;
+      line-height: 36px;
+      position: relative
+      &::before
+        content: ''
+        width: 55px
+        height: 6px
+        background-color: #F7654A
+        position: absolute
+        top: -15px
+
+// Best
+.best
+  background-color: #F7654A
+  color: #fff
+  &-content
+    display: flex
+    justify-content: space-between
+    padding-top: 30px
+    padding-bottom: 30px
+    align-items: center
+    &__title
+      font-size: 48px
+      line-height: 71px
+      letter-spacing: 0.02em
+      margin-bottom: 20px
+    &__subtitle
+      font-size: 24px
+      line-height: 36px
+      letter-spacing: 0.02em
+  .btn
+    border: none
+    outline: none
+    padding: 14px 30px 14px 50px
+    font-weight: bold
+    font-size: 14px
+    line-height: 21px
+    background-image: url(../img/email-btn.svg)
+    background-repeat: no-repeat
+    background-position: left 20px center
+    &:hover
+      cursor: pointer
+
+// Features
+.features
+  padding-top: 150px
+  padding-bottom: 150px
+  &-blocks
+    display: flex
+    flex-wrap: wrap
+  &-block
+    background-color: #F7F7F7
+    flex-basis: 33%
+    max-width: 33%
+    padding:  50px
+    align-items: center
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    margin-bottom: 30px
+    text-align: center
+    &__img
+      margin: 0 auto
+      margin-bottom: 15px
+      display: block
+    &__title
+      font-size: 21px
+      line-height: 31px
+      letter-spacing: 0.02em
+      text-align: center
+
+// Photo
+.photo
+  padding-bottom: 114px
+  &-blocks
+    display: flex
+    flex-wrap: wrap
+    &__item
+      display: flex
+      position: relative
+      margin: 0 auto
+      &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        display: block
+        background-color: rgba(64,65,73 ,0.5)
+      &:hover::before
+        content: ''
+        background-color: rgba(64,65,73 ,0)
+        cursor: pointer
+        transition: ease 0.3s
+    &__img
+      max-width: 475px
+
+// Feedback
+.feedback
+  padding-bottom: 150px
+  &-blocks
+    display: flex
+  &-block
+    background-color: #F7F7F7
+    margin-left: 30px
+    margin-bottom: 30px
+    padding: 79px 30px 38px 30px
+    background-image: url(../img/quotes.svg)
+    background-repeat: no-repeat
+    background-position: left 30px  top 30px
+    &__text
+      font-family: 'Open Sans', sans-serif
+      font-size: 14px
+      color: #999
+      line-height: 21px
+      max-width: 245px
+      margin-bottom: 10px
+  &-title
+    font-size: 21px
+    line-height: 31px
+    letter-spacing: 0.02em
+    
+// Contacts
+.contacts
+  padding-top: 100px
+  padding-bottom: 150px
+  &-blocks
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-block
+    flex-basis: 24%
+    &__img
+      margin: 0 auto
+      display: block
+      margin-bottom: 36px
+    &__title
+      font-size: 24px
+      line-height: 36px
+      text-align: center
+      color: #999
+      font-weight: 400
+      margin-bottom: 25px
+    &__subtitle
+      font-size: 24px
+      line-height: 36px
+      text-align: center
+      margin-bottom: 10px
+    &__link
+      display: block
+      font-size: 24px
+      line-height: 36px
+      text-align: center
+      color: #000
+      margin-bottom: 5px
+      text-decoration: none
+      &:hover
+        color: #F7654A
+        text-decoration: underline
+        transition: ease 0.3s
+
+// Footer
+.footer
+  background-color: #404149
+  padding: 30px
+  color: #fff
+  font-family: 'Open Sans', sans-serif
+  &-content
+    display: flex
+    justify-content: space-between
+    font-size: 16px
+    line-height: 22px
+    align-items: center
+    &__link
+      color: #F7654A
+      text-decoration: none
+      margin-left: 5px
+      &:hover
+        text-decoration: underline
+
+@media ( max-width: 920px )
+  .header
+    padding-top: 100px
+    padding-bottom: 300px
+    &-content
+      &__title
+        font-size: 55px
+        margin-bottom: 15px
+        line-height: 75px
+
+  .stats
+    &-blocks
+      margin-top: -200px
+      flex-wrap: wrap
+    &-block
+      flex-basis: 50%
+      &__title
+        font-size: 50px
+        margin-bottom: 10px
+        line-height: 75px
+      &__subtitle
+        font-size: 40px
+        margin-bottom: 5px
+
+  .party
+    &-blocks
+      flex-wrap: wrap
+    &-block
+      &__img
+        margin-bottom: 30px
+      &__title
+        margin-bottom: 20px
+        text-align: center
+
+  .features
+    padding-top: 100px
+    padding-bottom: 100px
+    &-block
+      margin-bottom: 3px
+
+  .photo
+    padding-bottom: 100px
+    &-blocks
+      justify-content: center
+      &__item
+        margin-bottom: 5px
+
+  .feedback
+    padding-bottom: 100px
+    &-blocks
+      flex-wrap: wrap
+    &-block
+      flex-basis: 100%
+      &__text
+        max-width: 100%
+
+  .contacts
+    padding-bottom: 100px
+    &-blocks
+      flex-wrap: wrap
+    &-block
+      flex-basis: 50%
+      margin-bottom: 20px
+      &__img
+        max-width: 40px
+      &__title
+        font-size: 21px
+        margin-bottom: 15px
+        line-height: 30px
+      &__subtitle
+        font-size: 19px
+        margin-bottom: 5px
+        line-height: 30px
+      &__link
+        font-size: 21px
+        line-height: 30px 
+
+  @media  ( max-width: 720px )
+    .section-title
+      font-size: 30px
+      line-height: 40px
+      margin-bottom: 45px
+    .header
+      &-content
+        &__title
+          font-size: 40px
+          line-height: 50px
+
+    .stats
+      &-blocks
+        padding: 25px 100px
+      &-block
+        margin-bottom: 10px
+        &__title
+          font-size: 40px
+          line-height: 50px
+        &__subtitle
+          font-size: 30px
+          line-height: 40px
+
+    .party
+      padding-top: 75px
+      padding-bottom: 75px
+      &-block
+        margin: 0 auto
+        &__title
+          font-size: 21px
+          line-height: 30px
+    
+    .best
+      &-content
+        flex-wrap: wrap
+        &__text
+          flex-basis: 100%
+          text-align: center
+        &__title
+          font-size: 35px
+          line-height: 40px
+          margin-bottom: 10px
+        &__subtitle
+          font-size: 21px
+          line-height: 25px
+          margin-bottom: 15px
+        &__btn
+          margin: 0 auto
+
+  .features
+    padding-top: 75px
+    padding-bottom: 75px
+    &-block
+      flex-basis: 50%
+      max-width: 40%
+      margin-bottom: 10px
+      &__img
+        max-width: 40px
+      &__title
+        font-size: 17px
+        line-height: 25px
+
+  @media ( max-width: 520px )
+    .header
+      &-content
+        &__title
+          font-size: 37px
+          line-height: 40px
+        &__subtitle
+          font-size: 16px
+    .stats
+      &-blocks
+        max-width: 400px
+        margin: 0 auto
+        margin-top: -200px
+      &-block
+        flex-basis: 100%
+      
+  .best
+    &-content
+      padding-top: 20px
+      padding-bottom: 20px
+      &__title
+        font-size: 31px
+        line-height: 35px
+      &__subtitle
+        font-size: 18px
+        line-height: 21px
+      .btn
+        font-size: 13px
+
+  .party
+    padding-top: 50px
+    padding-bottom: 50px
+    &-block
+      &__img
+        max-width: 300px
+
+  .features
+    padding-top: 50px
+    padding-bottom: 50px
+    &-block
+      padding: 20px
+      &__img
+        max-width: 40%
+      &__title
+        font-size: 13px
+        line-height: 20px
+
+  .feedback
+    padding-bottom: 50px
+    &-block
+      margin: 0 auto
+      margin-bottom: 15px
+
+  .photo
+    display: none
+
+  .contacts
+    padding-top: 50px
+    padding-bottom: 50px
+    &-block
+      &__img
+        max-width: 30px
+      &__title
+        font-size: 18px
+        line-height: 20px
+      &__subtitle
+        font-size: 13px
+        line-height: 20px
+      &__link
+        font-size: 13px
+        line-height: 20px
+  .footer
+    padding: 20px
+    &-content
+      flex-direction: column
+      font-size: 15px
+      line-height: 20px
+
+  @media ( max-width: 424px )
+    .section-title
+      font-size: 25px
+      line-height: 30px
+      margin-bottom: 30px
+    .header
+      padding-top: 70px
+      padding-bottom: 250px
+      background-image: url(../img/header-bg-a.jpg)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      &-content
+        &__title
+          font-size: 27px
+          margin-bottom: 10px
+        &__subtitle
+          font-size: 15px
+    .stats
+      &-block
+        &__title
+          font-size: 33px
+          line-height: 30px
+        &__subtitle
+          font-size: 25px
+          line-height: 30px
+        &__description
+          font-size: 15px
+          line-height: 20px
+    .best
+      &-content
+        &__title
+          font-size: 27px
+          line-height: 25px
+        &__subtitle
+          font-size: 15px
+          line-height: 15px
+      .btn
+        font-size: 10px
+    .footer
+      &-content
+        font-size: 13px
+      
+
+
+     
+
+    
+  
+
+
+  
+  
+
+
+      
+
+
+
+
+        
+
+        
