@@ -29,12 +29,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .header {
-  background-image: url(../img/header/header-bg.png);
+  /* background-image: url(../img/header/header-bg.png); */
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   padding-top: 190px;
   padding-bottom: 379px;
+  background-color: red;
 }
 
 .header-content {
